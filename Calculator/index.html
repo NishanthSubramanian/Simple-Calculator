@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Calculator</title>
+</head>
+
+<body>
+  <form name="calculator">
+   <table width = 30% border ='1px' align="center" class="tab" >
+        <tr><td colspan="2" align="center" class="blah">My calculator<br>
+        <input type="text" maxlength="40" size="30" name="display"></td></tr>
+        <td>
+       <table>
+       <tr>
+       <td><input type="button" value="    7    " name="seven" onclick="AddDigit('7')"></td>
+       <td><input type="button" value="    8    " name="eight" onclick="AddDigit('8')"></td>
+       <td><input type="button" value="    9    " name="nine" onclick="AddDigit('9')"></td>
+       <td><input type="button" value="    C    " name="clear" onclick="Clear()"></td>
+       <td><input type="button" value="  AC   " name="allclear" onclick="AllClear()"></td>
+       </tr>
+        <tr>
+       <td><input type="button" value="    4    " name="four" onclick="AddDigit('4')"></td>
+       <td><input type="button" value="    5    " name="five" onclick="AddDigit('5')"></td>
+       <td><input type="button" value="    6    " name="six" onclick="AddDigit('6')"></td>
+       <td><input type="button" value="    *     " name="multiply" onclick="Operate('*')"></td>
+       <td><input type="button" value="    /     " name="slash" onclick="Operate('/')"></td>
+       </tr>
+        <tr>
+       <td><input type="button" value="    1    " name="one" onclick="AddDigit('1')"></td>
+       <td><input type="button" value="    2    " name="two" onclick="AddDigit('2')"></td>
+       <td><input type="button" value="    3    " name="three" onclick="AddDigit('3')"></td>
+       <td><input type="button" value="    +     " name="plus" onclick="Operate('+')"></td>
+       <td><input type="button" value="    -     " name="minus" onclick="Operate('-')"></td>
+       </tr>
+       <tr>
+       <td><input type="button" value="   +/-   " name="plusminus" onclick="PlusMinus()"></td>
+       <td><input type="button" value="    0    " name="zero" onclick="AddDigit('0')"></td>
+       <td><input type="button" value="    .     " name="dot" onclick="Dot()"></td>
+       <td><input type="button" value="    =     " name="equalto" onclick="Calculate()"></td>
+       <td><input type="button" value="  Exp  " name="power" onclick="DoExponent()"></td>
+       </tr>
+       </table>
+       </td>
+       </table>
+       </form>
+</body>
+<script src="javas/calc.js"></script>
+</html>
